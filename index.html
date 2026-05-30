@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="dark"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مترجم زیرنویس امیرعلی</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Vazirmatn', 'Vazir', 'Inter', 'sans-serif'],
+          }
+        }
+      }
+    };
+  </script>
+  <!-- Vazirmatn font for Persian, Inter as a fallback for other languages -->
+  <link href="https://cdn.jsdelivr.net/gh/mohammadsattari/vazirmatn@33.0.3/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root {
+      /* Azure Nebula Theme (Dark) - Default */
+      --azure-nebula-bg-deep: #0b0f19;
+      --azure-nebula-bg-panel-opaque: #111827;
+      --azure-nebula-bg-panel-frosted: rgba(17, 24, 39, 0.85);
+      --azure-nebula-text-primary: #e5e7eb;
+      --azure-nebula-text-secondary: #9ca3af;
+      --azure-nebula-accent-primary: #38bdf8; /* sky-400 */
+      --azure-nebula-accent-primary-hover: #0ea5e9; /* sky-500 */
+      --azure-nebula-accent-primary-rgb: 56, 189, 248;
+      --azure-nebula-accent-secondary: #ec4899; /* pink-500 */
+      --azure-nebula-border: #374151; /* slate-700 */
+      --azure-nebula-input-bg: #1f2937; /* slate-800 */
+      --azure-nebula-input-bg-rgb: 31, 41, 55;
+      --azure-nebula-glow: 0 0 12px rgba(56, 189, 248, 0.3);
+      
+      --azure-nebula-danger: #f43f5e; /* rose-500 */
+      --azure-nebula-danger-rgb: 244, 63, 94;
+      --azure-nebula-success: #22c55e; /* green-500 */
+      --azure-nebula-success-rgb: 34, 197, 94;
+      --azure-nebula-warning: #f97316; /* orange-500 */
+      --azure-nebula-warning-rgb: 249, 115, 22;
+      --azure-nebula-info-rgb: 56, 189, 248; /* Same as accent primary for info alerts */
+
+      /* Solaris Shine Theme (Light) */
+      --solaris-bg-primary: #f8f9fa; /* Very light off-white */
+      --solaris-bg-secondary: #ffffff; /* White for panels/cards */
+      --solaris-bg-panel-frosted: rgba(255, 255, 255, 0.85);
+      --solaris-text-primary: #212529; /* Dark gray */
+      --solaris-text-secondary: #6c757d; /* Medium gray */
+      --solaris-accent-primary: #ff9900; /* Sunny Orange */
+      --solaris-accent-primary-hover: #e68a00; /* Darker Orange */
+      --solaris-accent-primary-rgb: 255, 153, 0;
+      --solaris-accent-secondary: #007bff; /* Bright Blue */
+      --solaris-border: #ced4da; /* Light gray */
+      --solaris-input-bg: #ffffff;
+      --solaris-input-bg-rgb: 255, 255, 255;
+      --solaris-glow: 0 0 12px rgba(255, 153, 0, 0.3);
+
+      --solaris-danger: #dc3545; /* Bootstrap danger red */
+      --solaris-danger-rgb: 220, 53, 69;
+      --solaris-success: #198754; /* Bootstrap success green */
+      --solaris-success-rgb: 25, 135, 84;
+      --solaris-warning: #ffc107; /* Bootstrap warning yellow */
+      --solaris-warning-rgb: 255, 193, 7;
+      --solaris-info-rgb: 255, 153, 0; /* Same as accent primary for info alerts in light */
+
+      /* Default to Azure Nebula Variables */
+      --theme-bg-deep: var(--azure-nebula-bg-deep);
+      --theme-bg-panel-opaque: var(--azure-nebula-bg-panel-opaque);
+      --theme-bg-panel-frosted: var(--azure-nebula-bg-panel-frosted);
+      --theme-text-primary: var(--azure-nebula-text-primary);
+      --theme-text-secondary: var(--azure-nebula-text-secondary);
+      --theme-accent-primary: var(--azure-nebula-accent-primary);
+      --theme-accent-primary-hover: var(--azure-nebula-accent-primary-hover);
+      --theme-accent-primary-rgb: var(--azure-nebula-accent-primary-rgb);
+      --theme-accent-secondary: var(--azure-nebula-accent-secondary);
+      --theme-border: var(--azure-nebula-border);
+      --theme-input-bg: var(--azure-nebula-input-bg);
+      --theme-input-bg-rgb: var(--azure-nebula-input-bg-rgb);
+      --theme-glow: var(--azure-nebula-glow);
+      --theme-danger: var(--azure-nebula-danger);
+      --theme-danger-rgb: var(--azure-nebula-danger-rgb);
+      --theme-success: var(--azure-nebula-success);
+      --theme-success-rgb: var(--azure-nebula-success-rgb);
+      --theme-warning: var(--azure-nebula-warning);
+      --theme-warning-rgb: var(--azure-nebula-warning-rgb);
+      --theme-info-rgb: var(--azure-nebula-info-rgb);
+      
+      --scrollbar-track-bg: var(--azure-nebula-bg-panel-opaque); 
+      --scrollbar-thumb-bg: var(--azure-nebula-border); 
+      --scrollbar-thumb-hover-bg: var(--azure-nebula-accent-primary);
+    }
+    
+    html.light {
+      --theme-bg-deep: var(--solaris-bg-primary);
+      --theme-bg-panel-opaque: var(--solaris-bg-secondary);
+      --theme-bg-panel-frosted: var(--solaris-bg-panel-frosted);
+      --theme-text-primary: var(--solaris-text-primary);
+      --theme-text-secondary: var(--solaris-text-secondary);
+      --theme-accent-primary: var(--solaris-accent-primary);
+      --theme-accent-primary-hover: var(--solaris-accent-primary-hover);
+      --theme-accent-primary-rgb: var(--solaris-accent-primary-rgb);
+      --theme-accent-secondary: var(--solaris-accent-secondary);
+      --theme-border: var(--solaris-border);
+      --theme-input-bg: var(--solaris-input-bg);
+      --theme-input-bg-rgb: var(--solaris-input-bg-rgb);
+      --theme-glow: var(--solaris-glow);
+      --theme-danger: var(--solaris-danger);
+      --theme-danger-rgb: var(--solaris-danger-rgb);
+      --theme-success: var(--solaris-success);
+      --theme-success-rgb: var(--solaris-success-rgb);
+      --theme-warning: var(--solaris-warning);
+      --theme-warning-rgb: var(--solaris-warning-rgb);
+      --theme-info-rgb: var(--solaris-info-rgb);
+
+      --scrollbar-track-bg: var(--solaris-bg-primary);
+      --scrollbar-thumb-bg: #adb5bd; /* scrollbar thumb for light theme */
+      --scrollbar-thumb-hover-bg: var(--solaris-accent-primary);
+      
+      color-scheme: light;
+    }
+    
+    html.dark {
+       /* Defaults are already Azure Nebula */
+      color-scheme: dark;
+    }
+
+
+    html, body, #root {
+      height: 100%;
+    }
+    
+    html {
+      background-color: var(--theme-bg-deep);
+      color: var(--theme-text-primary);
+    }
+
+    body {
+      font-family: 'Vazirmatn', 'Vazir', 'Inter', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+      direction: rtl;
+      background-color: var(--theme-bg-deep);
+      color: var(--theme-text-primary);
+      display: flex; 
+      flex-direction: column;
+      margin: 0;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    #root {
+      flex: 1 1 auto; 
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--scrollbar-track-bg);
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--scrollbar-thumb-bg);
+      border-radius: 10px;
+      border: 2px solid var(--scrollbar-track-bg); 
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--scrollbar-thumb-hover-bg);
+    }
+    
+    /* Profile Icon Styles - Theme aware */
+    .profile-icon-wrapper {
+        position: relative;
+        width: 40px; 
+        height: 40px; 
+        cursor: pointer;
+    }
+
+    .profile-icon-img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        transition: transform 0.6s cubic-bezier(0.77, 0, 0.175, 1), background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+        border: 2px solid var(--theme-accent-primary); 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+        background-color: var(--theme-accent-primary); 
+        color: var(--theme-bg-deep); 
+    }
+
+    .profile-icon-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotateY(180deg); 
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out 0.15s, transform 0.6s cubic-bezier(0.77, 0, 0.175, 1), color 0.3s ease; 
+        color: var(--theme-accent-primary); 
+        font-weight: bold;
+        pointer-events: none; 
+        backface-visibility: hidden;
+        white-space: nowrap; 
+    }
+
+    .profile-icon-wrapper.active .profile-icon-img,
+    .profile-icon-wrapper:hover .profile-icon-img { 
+        transform: rotateY(180deg);
+    }
+
+    .profile-icon-wrapper.active .profile-icon-text,
+    .profile-icon-wrapper:hover .profile-icon-text { 
+        transform: translate(-50%, -50%) rotateY(0deg);
+        opacity: 1;
+    }
+    
+    /* Tooltip Styles - Theme aware */
+    .tooltip {
+      position: relative;
+      display: inline-block;
+    }
+
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: max-content;
+      max-width: 250px; 
+      background-color: var(--theme-bg-panel-opaque); 
+      color: var(--theme-text-primary);
+      text-align: center;
+      border-radius: 6px;
+      padding: 8px 12px; 
+      position: absolute;
+      z-index: 50; 
+      bottom: 130%; 
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; 
+      font-size: 0.8rem; 
+      box-shadow: 0 3px 8px rgba(0,0,0,0.4);
+      border: 1px solid var(--theme-border);
+    }
+
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
+    
+    /* Ensure Tailwind selection utility works with themes */
+    html.dark ::selection {
+      background-color: var(--azure-nebula-accent-primary);
+      color: var(--azure-nebula-bg-deep); /* Or a very light color for dark bg selected text */
+    }
+    html.light ::selection {
+      background-color: var(--solaris-accent-primary);
+      color: var(--solaris-bg-secondary);
+    }
+
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "clsx/": "https://esm.sh/clsx@^2.1.0/",
+    "clsx": "https://esm.sh/clsx@^2.1.0",
+    "jszip": "https://esm.sh/jszip@3.10.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^4.5.1",
+    "vite": "https://esm.sh/vite@^6.3.5",
+    "process": "https://esm.sh/process@^0.11.10"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
