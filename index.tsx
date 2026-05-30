@@ -1107,8 +1107,8 @@ const GitHubGuidePanel: React.FC<GitHubGuidePanelProps> = ({ uiLang }) => {
 
 ### ۱. شبیه‌سازی مخزن پروژه:
 \`\`\`bash
-git clone https://github.com/amiraliproject/subtitle-translator-ai.git
-cd subtitle-translator-ai
+git clone https://github.com/amirali-mini-hunter/Subtitle-translator-with-artificial-intelligence.git
+cd Subtitle-translator-with-artificial-intelligence
 \`\`\`
 
 ### ۲. نصب پکیج‌های پیش‌نیاز:
@@ -1143,7 +1143,7 @@ npm run dev
 
 A comprehensive, production-grade cloud solution for automatic translation of SRT subtitle files. This application is powered by **Google Gemini 3.5 AI models** via their modern server SDK. It splits files intelligently to maintain context and emotional resonance of dialogue.
 
-> **Conceived, designed, and fully engineered from scratch by amiraliproject** ⚡
+> **Conceived, designed, and fully engineered from scratch by amirali-mini-hunter** ⚡
 
 ---
 
@@ -1169,8 +1169,8 @@ To host this engine on your custom local workstation or cloud instance, perform 
 
 ### 1. Clone the repository:
 \`\`\`bash
-git clone https://github.com/amiraliproject/subtitle-translator-ai.git
-cd subtitle-translator-ai
+git clone https://github.com/amirali-mini-hunter/Subtitle-translator-with-artificial-intelligence.git
+cd Subtitle-translator-with-artificial-intelligence
 \`\`\`
 
 ### 2. Configure Node dependencies:
@@ -1302,9 +1302,9 @@ export const translateTextBatch = async (
         <div className="flex items-center space-x-2 rtl:space-x-reverse text-lg sm:text-xl font-medium">
           <BookIcon className="w-5 h-5 text-[var(--theme-text-secondary)]" />
           <div className="flex items-center gap-1">
-            <span className="text-[var(--theme-accent-primary)] font-semibold hover:underline cursor-pointer">amiraliproject</span>
+            <span className="text-[var(--theme-accent-primary)] font-semibold hover:underline cursor-pointer">amirali-mini-hunter</span>
             <span className="text-[var(--theme-text-secondary)] opacity-60">/</span>
-            <span className="font-bold hover:underline cursor-pointer text-[var(--theme-text-primary)]">subtitle-translator-ai</span>
+            <span className="font-bold hover:underline cursor-pointer text-[var(--theme-text-primary)] truncate max-w-xs sm:max-w-md">Subtitle-translator-with-artificial-intelligence</span>
           </div>
           <span className="text-xs px-2 py-0.5 rounded-full border border-[var(--theme-border)] text-[var(--theme-text-secondary)] font-normal bg-[rgba(var(--theme-accent-primary-rgb),0.05)]">
             Public
@@ -1505,7 +1505,7 @@ export const translateTextBatch = async (
                   </p>
 
                   <div className="p-3.5 bg-[var(--theme-input-bg)] rounded-lg border border-[var(--theme-border)] text-xs sm:text-sm font-semibold flex items-center justify-between">
-                    <span>⚡ {guideLang === 'fa' ? 'طراحی و پیاده‌سازی گام‌به‌گام توسط امیرعلی' : 'Conceived, designed, and fully engineered by amiraliproject'}</span>
+                    <span>⚡ {guideLang === 'fa' ? 'طراحی و پیاده‌سازی گام‌به‌گام توسط امیرعلی دانا' : 'Conceived, designed, and fully engineered by amirali-mini-hunter'}</span>
                     <span className="text-amber-500 font-bold">★ Star Count: 243+</span>
                   </div>
 
@@ -1552,15 +1552,15 @@ export const translateTextBatch = async (
                         <div className="flex items-center justify-between text-xs text-[var(--theme-text-secondary)] mb-1">
                           <span>{guideLang === 'fa' ? '۱. شبیه‌سازی کدهای پروژه' : '1. Clone Repository'}</span>
                           <button 
-                            onClick={() => handleCopy('git clone https://github.com/amiraliproject/subtitle-translator-ai.git \ncd subtitle-translator-ai', 'c1')} 
+                            onClick={() => handleCopy('git clone https://github.com/amirali-mini-hunter/Subtitle-translator-with-artificial-intelligence.git \ncd Subtitle-translator-with-artificial-intelligence', 'c1')} 
                             className="hover:text-[var(--theme-text-primary)]"
                           >
                             {copiedText === 'c1' ? 'Copied!' : 'Copy'}
                           </button>
                         </div>
                         <pre className="p-3 bg-[var(--theme-input-bg)] rounded-md border border-[var(--theme-border)] overflow-x-auto text-xs font-mono text-cyan-400 select-all" dir="ltr">
-                          git clone https://github.com/amiraliproject/subtitle-translator-ai.git<br/>
-                          cd subtitle-translator-ai
+                          git clone https://github.com/amirali-mini-hunter/Subtitle-translator-with-artificial-intelligence.git<br/>
+                          cd Subtitle-translator-with-artificial-intelligence
                         </pre>
                       </div>
 
